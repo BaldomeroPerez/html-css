@@ -16,8 +16,8 @@
 
     <h1>Reproduzindo Áudio</h1>
     <p>Vamos aprender a reproduzir áudios em HTML5.</p>
-    <audio preload="metadata" autoplay controls loop>
-        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+    <audio preload="metadata" autoplay controls loop><!--Preload é para vazer a leitura(nunca usar o auto, Autoplay é para ligar o audio automaticamente, Controls é para aparecer o painel de controle no site e o Loop é para reiniciar o audio quando terminar.)-->
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg"><!-- É importante manter a orden do audio, pois quando não achar o primeiro ele irá para o segundo e depois o terceiro.-->
         <source src="midia/guanacast-33.ogg" type="audio/ogg">
         <source src="midia/guanacast-33.wav" type="audio/wav">
         <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
