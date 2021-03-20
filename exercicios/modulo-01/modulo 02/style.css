@@ -8,24 +8,32 @@
 body {
     background-image: linear-gradient(to right, #f1d8c9, #f2c2f2);
 }
+/*background-image criou um fundo para uma sobreposicção da folha, linear- gradient formata essa folha */
+
 main{
     background-color: white;
-    border-radius: 20px;
+    border-radius: 20px; 
     box-shadow: 10px 10px 10px black;
     width: 600px;
     padding: 10px;
     margin: auto;
-}
+} 
+/* border-radius aredonda  nas bordas da folha, width da o tamanho para folha(sobreposição) */
+
 h1 {
     color: #f39029;
     text-align: center;
     text-shadow: 2px 2px 2px black;
-
 }
+/* text-align alinhar posiciona o texto na linha, direita\esquerda\centro.
+ text-shadow cria sombreamento da palavra tendo que definir largura profundidade e cor */
 h2{
-    color: #125189;
-
+    color: blueviolet; 
+    text-align: right;
+    text-shadow: 5px 2px 5px tomato;
 }
+
 p {
-    text-align: justify;
+    color: rgba(128, 247, 9, 0.99);
+    text-align: ;
 }
