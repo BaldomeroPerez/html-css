@@ -6,16 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FONTES EM CSS </title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
         body {
-            font-family: 'courier news';
-        } /* Tem que ter haspas quando for duas palavras sem hifem */
+            font-family: 'Work Sans';
+            font-size: 1em;
+            font-weight:bolder;
+            font-style: oblique;
+            text-decoration: underline;
+        } /* weight=peso : lighter, normal, bold, bolder 
+        numerico de 100 a 900, a maioria nao tem tantas opções, style: italic, normal e oblico, pode se fazer combinações 
+        text-decoration: underline sublinhado*/
+
         h1 {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 32px;
-        } /* mde.Absolutas: cm, mm, in(poleg), px, pt, pc(paika){pt e pc são tipograficas}
-            med. Relativas: em, ex, rem, vw(viwport), vh, %  recomendado px e em, nao pode ter espaço, um em é = a 16px */
-        h2 {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            font: italic,bolder, 3em, 'work sans', sans-serif;
+        } /* shorthand = forma abreviada condensar todas um uma só , mas tem que seguir a ordem : 
+        style \ weight \ size e family, existe varios shorthand*/
+        h2 { font: bolder, 1em, 'work sans' ;
         }
     </style>
 </head>
