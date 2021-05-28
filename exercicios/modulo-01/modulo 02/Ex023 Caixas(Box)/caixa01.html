@@ -6,28 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo de Caixas</title>
     <style>
-        h1{
+        h1{ /* Box-level */
+            /*display: inline;  == para tranformar o box level em in-line*/
             background-color: lightskyblue;
             height: 300px;
             width: 300px;
+
             border-width: 10px;
             border-style: solid;
             border-color: darkslategray;
+            /* Simplificando comandos:sempre seguindo sentido relógio = cima, direita, baixo, esquerda
+            border: 10pc,solid,darkslategray;*/
 
             padding-top: 10px;
             padding-right: 10px;
             padding-left: 10px;
-            padding-bottom: 10px;  
+            padding-bottom: 10px; 
+            /* Simplificando comandos: seguindo direção do relógio = SE TODAS FOREMM IGUAS COÇOCAR SOMENTE UMA. tambem vai aceitar.
+            paddig: 10px, 10px, 10px, 10px */
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            /* Simplificando comandos: quando informado duas variaveis ele considera top e baixo uma e right e left á outra.
+            margin: 10px, 10px, 20px, 10px */
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: chartreuse;
+            /* Simplificando comandos: quando informado duas variaveis ele considera top e baixo uma e right e left á outra.
+            outline: 5px, dashed, chartreuse */
         }
-        a{
+
+        a{ /* In-line Level*/
+            /*display: block;  == transformar in-line em box-level */
             border-width: 10px;
             border-style: double;
             border-color: red;
 
+            /*border: 10px, double, red; */
+
             padding-top: 10px;
-            padding-right: 10px;
+            padding-right: 20px;
             padding-left: 10px;
-            padding-bottom: 10px;  
+            padding-bottom: 20px;  
+
+            /*padding: 10px, 20px, 10px, 20px; */
+
+            margin-top: 5px;
+            margin-right: 20px;
+            margin-bottom: 5px;
+            margin-left: 20px;
+
+            /*margin: 5px, 20px, 5px, 20px; */
         }
 
     </style>
