@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+    
+        header{
+            width: 600px;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(161, 151, 151);
+            padding: 3px;
+            box-shadow: 2px 2px 2px black;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;   
+        }
+
+        nav > a :hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        article{
+            background-color:lightgray;
+            padding: 10px;
+        }
+
+        article > aside{
+            background-color: rgb(177, 176, 176);
+        }
+
+        footer{
+            background-color: turquoise;
+            color: yellow;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        
+        footer > p {  
+            margin: 0px;
+        } /* ajustando a a margem do paragrafo do footer */
+    </style>
+
+</head>
+<body>
+   <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+   </header>
+   <main>
+        <section id="assuntos"> 
+            <p>
+                Esporte, Politica e Tecnologia.
+            </p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>
+                    Noticias sobre o Brasil
+                </h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quia doloremque rerum! Asperiores incidunt, laboriosam, quia nam nesciunt delectus, debitis aut porro eligendi magni nulla consectetur a excepturi. Distinctio, vel!
+                </p>
+                <aside>
+                    <p>Artigo escrito por Mirão o Bom e Jose Araujo</p> 
+                </aside>
+            </article>
+
+        </section>
+   </main>
+   <footer>
+        <p>
+            Desenvolvido por Miro Perez
+        </p>
+   </footer>
+</body>
+</html>
