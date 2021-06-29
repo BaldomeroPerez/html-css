@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Teste de Responsividade</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px;
+            max-width: 800px;
+            margin: auto;
+        }
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>
+            Testando Responsividade
+        </h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quod nihil quos, facilis voluptas voluptatum consectetur, consequatur pariatur possimus dolorum repellat perferendis atque est excepturi eum officiis iure ex commodi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi natus distinctio aliquam repellat, at qui magnam ut dolores molestiae, sit architecto reprehenderit, ad ducimus dicta ex autem expedita incidunt in?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quas autem ducimus distinctio! Hic, voluptas molestiae impedit porro, quos eos soluta labore reprehenderit reiciendis dicta at mollitia vel dolorum assumenda.
+        </p>
+        <picture>
+            <source media="(max-width: 600px )" srcset="imagens/irina-blok-pq.jpg">  
+            <img src="imagens/irina-blok.jpg" alt="irina-blok">
+        </picture> <!-- quando o side ficar menor que 600 px ele troca a img blok por blok-pq-->
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quod nihil quos, facilis voluptas voluptatum consectetur, consequatur pariatur possimus dolorum repellat perferendis atque est excepturi eum officiis iure ex commodi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi natus distinctio aliquam repellat, at qui magnam ut dolores molestiae, sit architecto reprehenderit, ad ducimus dicta ex autem expedita incidunt in?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quas autem ducimus distinctio! Hic, voluptas molestiae impedit porro, quos eos soluta labore reprehenderit reiciendis dicta at mollitia vel dolorum assumenda.
+        </p>
+    </main>
+</body>
+</html>
