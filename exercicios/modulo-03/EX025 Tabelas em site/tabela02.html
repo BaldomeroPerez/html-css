@@ -17,6 +17,12 @@
             border: 1px solid black;
             padding: 10px;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         thead, tfoot {
             background-color: gray;
             color: white;
@@ -30,21 +36,23 @@
     <h1>Uso de Tabelas Grandes</h1>  
     <!-- Anatonia para Tabelas Grandes
         TABLE
-            THEAD - cabeça
+            CAPTION - Legenda
+            THEAD - Cabeça
                 Tr, Td, Th
 
-            TBODY - corpo
+            TBODY - Corpo
                 Tr, Td, Th
 
-            TFOOT - pé
+            TFOOT - Pé
                 Tr, Td, Th
             
     -->
     <table>
+        <caption>População das Unidades Federatival</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th> <!-- style diminui o espaçamento inicial -->
             </tr>
         </thead>
         <tbody>
@@ -160,7 +168,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>0000000000</strong></td>
             </tr>
         </tfoot>
