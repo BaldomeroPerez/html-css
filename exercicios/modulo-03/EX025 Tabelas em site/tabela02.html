@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
@@ -23,9 +24,16 @@
             padding: 10px;
             background-color: lightgray;
         }
+    
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+        thead > tr > th {
+            position: sticky; 
+            top: 0; 
+            background-color: lightgrey;
+            /* para feito de colar o cabeçalho, mudando tambem o table posicion relative*/
         }
         tbody > tr:nth-child(2n) { /* nth-child é uma pseudo classe para dar o efeito zebrado  odd(impar) ou even(par)*/
             background-color: lightgrey;
