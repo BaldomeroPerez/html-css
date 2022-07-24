@@ -13,9 +13,10 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="get" autocomplete="off">
         <!-- autocomplete-> para desligar preenchimentos anteriores
-        action -> para criar uma ação no botão submit-->
+        action -> para criar uma ação no botão submit
+    method é para enviar dados get é o padrão e post esconde url.-->
          <p><label for="inome">Nome</label>: 
             <input type="text" name="nome" id="inome"></p>
          <p><label for="isobrenome">Sobrenome</label>: 
