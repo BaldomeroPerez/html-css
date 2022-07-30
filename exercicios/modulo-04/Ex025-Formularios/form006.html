@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplos de Formulários</h1>
+    
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+        <!-- o value determina direto a cor (exemplo #00ff00 = verde) -->
+        <p>
+            <label for="inivel">Nivel de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="7" value="2">
+        </p>
+        <!-- potenciometro deslizante padrão 0 a 100 sempre inicia no centro (50) usando o mix e max conseguimos altera avanço e value  altera o inicio ou cheio (max)-->
+        <p>
+        <p>
+            <label for="ifoto">Foto do perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+        <!-- abre caixa para imagens e deixa o usuario escolhe imagens, no type"image" quel escolhe não é o usuario. Tem que usar o metodo "POST" -->
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
