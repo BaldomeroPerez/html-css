@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsivo</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet"><!-- fonte do hamburguinho-->
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+         <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span><!--vem do link do google tambem podemos colocar i  ao inves de span , depois colocado a função javascript "onclick"-->
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 01</a></li>
                 <li><a href="#">Opção 02</a></li>
@@ -29,5 +32,14 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque optio rem minima veniam molestias nulla expedita? Repellat maxime aliquid iste iusto qui cum, assumenda fugiat tempora unde ex perspiciatis veniam!</p>
         </article>
     </main>
+    <script>
+        function clickMenu () {
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'    
+            } else{
+                itens.style.display = 'block'
+            }
+        } /* está transformando (condição = if) o display "none" em "block" novamente / (igual é ==) (recebe é =), mostrar e esconder as opções*/
+    </script>
 </body>
 </html>

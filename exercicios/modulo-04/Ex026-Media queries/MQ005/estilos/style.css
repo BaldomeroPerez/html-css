@@ -19,8 +19,22 @@ h1 {
     text-align: center;
 }
 
-menu {
+span#burguer {
+    background-color: rgb(50, 50, 50);
     display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer; /*faz o cursor virar uma mãozinha */
+}
+
+span#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
+menu {
+    display: none; /*trocado o display "block" por "none" para sumir as opções */
 }
 
 menu > ul {
