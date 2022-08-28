@@ -8,8 +8,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 rel="stylesheet"><!-- fonte do hamburguinho-->
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()"> <!-- colocado para resolver o problema da mudança de tamanho -->
     <header>
         <h1>Meu Site</h1>
          <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span><!--vem do link do google tambem podemos colocar i  ao inves de span , depois colocado a função javascript "onclick"-->
@@ -40,6 +41,13 @@ rel="stylesheet"><!-- fonte do hamburguinho-->
                 itens.style.display = 'block'
             }
         } /* está transformando (condição = if) o display "none" em "block" novamente / (igual é ==) (recebe é =), mostrar e esconder as opções*/
+        function mudouTamanho (){
+            if(window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        } /* o que muda de um para o outro é que um estÁ testando a largura da tela*/
     </script>
 </body>
 </html>
