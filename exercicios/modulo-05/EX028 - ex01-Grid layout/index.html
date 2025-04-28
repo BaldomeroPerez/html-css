@@ -9,11 +9,14 @@
             border: 3px solid blue;
             height: 250px;
 
-            display: grid;  /* testa com grid e flex para ver resultado */
-            grid-template-columns: auto auto auto;  /* se colocar 4 auto abre quatro colunas */
+            display: grid;  
+            grid-template-columns: auto auto auto;  
             grid-template-rows: auto auto auto;
-            gap: 5px;  /* espaçamento entre as colunas*/
-
+            gap: 5px; 
+            align-items: normal;   /* praticar mudancas, normal de todas é stretch , start, center, end*/
+            justify-items:normal;     /* praticar mudancas start, center, end*/
+            align-content: space-around;    /* praticar mudancas, start,center, end e os spaces*/
+            justify-content: normal; /* praticar mudancas, start, center, end e os spaces*/
         }
         div.item {
             border: 3px solid red;
@@ -30,6 +33,7 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
     </div>
 </body>
 </html>
