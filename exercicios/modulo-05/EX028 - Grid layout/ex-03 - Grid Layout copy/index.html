@@ -7,19 +7,18 @@
     <style>
         div.container {
             border: 3px solid blue;
-            height: 250px;
 
             display: grid;  
-            /*grid-template-columns: auto auto auto;  
-            grid-template-rows: auto auto auto;  - substituido pelo comando de baixo*/
-            grid-template:repeat(3,auto)/ repeat(3, auto) ;
-            gap: 10px; 
-            /*align-items: start;   
-            justify-items:center; - substituido pelo comando de baixo*/   
-            place-items: start center;   
-            /*align-content: space-between;    
-            justify-content: end; substituido pelo comando de baixo*/
-            place-content: space-between end;
+            grid-template-columns: repeat(3, 120px); /* substituido 12px,120px 120px; usar tambem 1fr, não com o repeat */
+            grid-template-rows: repeat(3, 80px); /*80px 80px 80px; subistituido usar tambem 1 fr*/
+            grid-auto-flow: row;  /*trocando rows por column altera a orden de apresentação*/
+            grid-auto-rows: 80px;  /* Ajusta automaticamente os itens acrescidos */
+            grid-auto-columns: 120px; /* Ajusta automaticamente os itens acrescidos */
+            gap: 10px;
+             
+            place-items: normal normal;   
+            
+            place-content: normal normal;
         }
         div.item {
             border: 3px solid red;
@@ -37,6 +36,8 @@
         <div class="item">F</div>
         <div class="item">G</div>
         <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
     </div>
 </body>
 </html>
