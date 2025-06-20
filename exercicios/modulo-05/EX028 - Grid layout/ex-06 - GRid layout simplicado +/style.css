@@ -1,0 +1,36 @@
+.container {
+    display: grid;
+    grid-template-rows:repeat(3, 100px);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;  /* para dar espassamento ( ligar o grip na inspecionar google) */
+}
+
+.caixa1 {
+    background-color: red;
+    /*grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;  simplif.*/
+    
+    grid-area: 1/ 1/ 2/ 5; /* span 1 e span 4 no lugar do 2 e 5*/
+}
+
+.caixa2 {
+    background-color: greenyellow;
+   /* grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;*/
+
+    grid-area: 2/ 1/ 4/ 3; /* span 2 e span 2 no lugar do 4 e 3 */
+}
+
+.caixa3 {  
+    background-color: blue;
+   /* grid-row-start: 2;
+    grid-row-end: 4; 
+    grid-column-start: 3;
+    grid-column-end: 5;*/
+
+    grid-area: 2/ 3/ 4/ 5; /* span 2 e span 2 no lugar do 4 e 5 */
+}
